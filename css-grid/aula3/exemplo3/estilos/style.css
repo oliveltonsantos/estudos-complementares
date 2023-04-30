@@ -1,0 +1,13 @@
+@charset "UTF-8";
+
+/* Background largura total com texto ocupando certo tamanho do container. */
+
+.full-width-example {
+    display: grid;
+    grid-template-columns: minmax(auto, 900px);
+    justify-content: center;
+    background-color: rgb(255, 211, 130);
+    color: rgb(112, 86, 38);
+    line-height: 1.7;
+    padding: 20px;
+  }

@@ -1,0 +1,17 @@
+@charset "UTF-8";
+
+/* Centralizar o "Hello" dentro da div*/
+
+.example-banner {
+    max-width: 900px;
+    height: 300px;
+    background-color: rgb(222, 222, 255);
+    margin: 0 auto 20px auto;
+    display: grid;
+  }
+
+.center-me {
+    margin: auto;
+    color: rgb(113, 113, 175);
+    font-size: 3rem;
+  }

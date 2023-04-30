@@ -1,0 +1,62 @@
+@charset "UTF-8";
+
+/* Aula: https://youtu.be/KMPgMaBspzc */
+
+@import url('https://fonts.googleapis.com/css2?family=Baloo+2:wght@400;500;600;700;800&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    list-style: none;
+    text-decoration: none;
+}
+
+body {
+    background-color: #fab733;
+    color: #030070;
+    font-family: 'Baloo 2', cursive;
+    font-size: 20px;
+    font-weight: 700;
+    text-align: center;
+}
+
+.main-screen {
+    width: 360px;
+    margin: 0 auto;
+}
+
+.box-title {
+    background-image: url(../images/background.svg);
+    background-position: bottom;
+    background-repeat: no-repeat;
+    padding: 24px; 
+}
+
+.box-title h1 {
+    font-size: 1em;
+}
+
+.box-title p {
+    font-size: 1.3em;
+    line-height: 1;
+}
+
+.box-image {
+    padding: 20px;
+}
+
+.box-image img {
+    margin: 16px 0;
+}
+
+.link-backward {
+    color: #ff66c1;
+    background-color: #030070;
+    padding: 0 16px;
+    border-radius: 16px;
+    display: flex;
+    margin: 0 auto;
+    width: 120px;
+}
+

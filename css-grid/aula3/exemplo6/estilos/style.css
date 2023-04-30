@@ -1,0 +1,20 @@
+@charset "UTF-8";
+
+/* Responsive Without Breakpoints */
+
+.responsive-example {
+    max-width: 1100px;
+    margin: 20px auto;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+    gap: 20px;
+  }
+  
+  .responsive-item {
+    background-color: rgb(204, 247, 230);
+    padding: 20px;
+    color: rgb(90, 145, 123);
+    font-size: 0.77rem;
+    line-height: 1.7;
+    overflow: auto;
+  }

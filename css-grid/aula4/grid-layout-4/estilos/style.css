@@ -1,0 +1,147 @@
+@charset "UTF-8";
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-size: 30px;
+}
+
+[class ^= "box-"] {
+    display: grid;
+    place-items: center;
+    border: solid 5px orangered;
+    padding: 10px;
+    border-radius: 20px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, .1);
+    color: #fff;
+}
+
+body {
+    background: black;
+    height: 100vh;
+}
+
+.pro {
+
+    height: 90vh;
+    width: 90%;
+    margin: 20px auto;
+
+    display: grid;
+    gap: 20px;
+
+    grid-template-columns: repeat(12, 1fr);
+    grid-template-areas: 
+
+    "h h h h  h h h h  h h h h"
+    "b b b b  b b b b  b b b b"
+    "m m m m  m m m m  m m m m"
+    "s s s s  s s s s  s s s s"
+    "f f f f  f f f f  f f f f";
+}
+
+.pro .box-1 {
+    grid-area: h;
+}
+
+.pro .box-2 {
+    grid-area: b;
+}
+
+.pro .box-3 {
+    grid-area: m;
+}
+
+.pro .box-4 {
+    grid-area: s;
+}
+
+.pro .box-5 {
+    grid-area: f;
+}
+
+@media (min-width: 768px) {
+
+    .pro {
+
+        height: 90vh;
+        width: 90%;
+        margin: 20px auto;
+    
+        display: grid;
+        gap: 20px;
+    
+        grid-template-columns: repeat(12, 1fr);
+        grid-template-areas: 
+
+        "h h h h  h h h h  h h h h"
+        "b b b b  m m m m  m m m m"
+        "b b b b  m m m m  m m m m"
+        "s s s s  m m m m  m m m m"
+        "s s s s  f f f f  f f f f";
+    }
+    
+    .pro .box-1 {
+        grid-area: h;
+    }
+    
+    .pro .box-2 {
+        grid-area: b;
+    }
+    
+    .pro .box-3 {
+        grid-area: m;
+    }
+    
+    .pro .box-4 {
+        grid-area: s;
+    }
+    
+    .pro .box-5 {
+        grid-area: f;
+    }
+}
+
+@media (min-width: 1080px) {
+
+    .pro {
+
+        height: 90vh;
+        width: 90%;
+        margin: 20px auto;
+    
+        display: grid;
+        gap: 20px;
+    
+        grid-template-columns: repeat(12, 1fr);
+        grid-template-areas: 
+
+        "h h h h  h h h h  h h h h"
+        "b b m m  m m m m  m m s s"
+        "b b m m  m m m m  m m s s"
+        "b b m m  m m m m  m m s s"
+        "f f f f  f f f f  f f s s";
+    }
+    
+    .pro .box-1 {
+        grid-area: h;
+    }
+    
+    .pro .box-2 {
+        grid-area: b;
+    }
+    
+    .pro .box-3 {
+        grid-area: m;
+    }
+    
+    .pro .box-4 {
+        grid-area: s;
+    }
+    
+    .pro .box-5 {
+        grid-area: f;
+    }
+
+}

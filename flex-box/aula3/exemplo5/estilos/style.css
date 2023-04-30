@@ -1,0 +1,39 @@
+@charset "UTF-8";
+
+html,
+body {
+    padding: 0;
+    margin: 0;
+}
+
+input {
+    font-size: 14px;
+    font-family: Helvetica, sans-serif;
+}
+
+body {
+    background-color: #BBB;
+    font-family: Helvetica, sans-serif;
+    padding-bottom: 100px;
+}
+
+h2,
+h3 {
+    margin: 0 0 .75em 0;
+}
+
+/* fifth example */
+
+.banner {
+    height: 400px;
+    max-width: 700px;
+    margin: 40px auto 40px auto;
+    background-color: #2a2a2a;
+    display: flex;
+  }
+  
+  .center-me {
+    color: #FFF;
+    font-size: 50px;
+    margin: auto;
+  }

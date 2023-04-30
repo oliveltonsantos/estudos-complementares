@@ -1,0 +1,84 @@
+@charset "UTF-8";
+
+/* Aula: https://youtu.be/3C7v3S-tnFw 
+
+0:00 - Introdução
+0:30 - O que é flexbox?
+1:36 - Criando o HTML
+3:40 - Estilizando o CSS
+5:00 - display: flex;
+6:40 - flex-direction: row;
+10:30 - justify-content
+14:50 - flex-direction: row-reverse;
+15:59 - flex-direction: column;
+18:39 - gap
+20:19 - align-items
+25:54 - flex-wrap 
+28:00 - flex-flow
+28:55 - align-content
+31:38 - order
+36:10 - flex-grow
+39:14 - flex-shrink
+41:45 - flex-basis
+44:00 - Shorthand flex
+45:32 - align-self
+46:49 - centralizar um elemento usando o flex
+48:23 - Tornar um flex-item em flex
+
+*/
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.flex-container {
+    background: yellow;
+    display: flex;
+    flex-direction: row; /*eixo principal*/
+    justify-content: flex-start; /* só mexe no eixo principal*/
+    align-items: center; /*só mexe no eixo transversal*/
+    flex-wrap: wrap;
+    align-content: flex-start;
+    /* flex-flow: row wrap; ou flex-flow: column no-wrap;
+( é a combinação de flex-direction e flex-wrap) */
+    gap: 30px;
+    padding: 30px;
+    height: 80vh;
+}
+
+.flex-item {
+    background: pink;
+    flex-grow: 1;
+    flex-shrink: 1;
+}
+
+.flex-item:nth-child(1) {
+    height: 200px;
+    flex-grow: 2;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.flex-item:nth-child(2) {
+    align-self: center;
+}
+
+.flex-item:nth-child(3) {
+    align-self: flex-end;
+}
+
+.flex-item:last-child {
+    flex: 0 1 100%; /*grow > shrink > basis*/
+}
+
+.flex-container2 {
+    width: 100%;
+    height: 300px;
+    background: limegreen;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}

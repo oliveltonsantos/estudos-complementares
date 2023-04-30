@@ -1,0 +1,56 @@
+@charset "UTF-8";
+
+html,
+body {
+    padding: 0;
+    margin: 0;
+}
+
+input {
+    font-size: 14px;
+    font-family: Helvetica, sans-serif;
+}
+
+body {
+    background-color: #BBB;
+    font-family: Helvetica, sans-serif;
+    padding-bottom: 100px;
+}
+
+h2,
+h3 {
+    margin: 0 0 .75em 0;
+}
+
+/* sixth example */
+
+.equal-height-container {
+    max-width: 900px;
+    margin: 0 auto;
+    display: flex;
+  }
+  
+  .first {
+    background-color: #FFF;
+    padding: 20px;
+    flex: 1;
+  }
+  
+  .second {
+    background-color: yellow;
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+
+  }
+
+  .second-a {
+    background-color: #c0dbe2;
+    flex: 1;
+
+  }
+  
+  .second-b {
+    background-color: #cdf1c3;
+    flex: 1;
+  }

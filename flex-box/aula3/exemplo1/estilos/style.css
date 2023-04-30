@@ -1,0 +1,45 @@
+@charset "UTF-8";
+
+html,
+body {
+    padding: 0;
+    margin: 0;
+}
+
+input {
+    font-size: 14px;
+    font-family: Helvetica, sans-serif;
+}
+
+body {
+    background-color: #BBB;
+    font-family: Helvetica, sans-serif;
+    padding-bottom: 100px;
+}
+
+h2,
+h3 {
+    margin: 0 0 .75em 0;
+}
+
+/* first example */
+.container {
+    max-width: 750px;
+    margin: 20px auto 0 auto;
+    padding: 30px;
+    background-color: #FFF;
+  }
+  
+  .form-row {
+    padding: 10px 0;
+    display: flex;
+  }
+  
+  .form-row label {
+    padding-right: 10px;
+  }
+  
+  .form-row input {
+    flex: 1;
+  }
+

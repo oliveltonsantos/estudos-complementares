@@ -1,0 +1,92 @@
+@charset "UTF-8";
+
+/* Aula: https://youtu.be/TnL1TqfNHFQ */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    list-style: none;
+    text-decoration: none;
+    font-family: sans-serif;
+}
+
+body {
+    width: 100%;
+    height: 100vh;
+}
+
+.container {
+    width: 935px;
+    height: 520px;
+    border-radius: 20px;
+    overflow: hidden; /* as imagens irão respeitar a altura e a largura do container*/
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    box-shadow: 0 5px 10px #888;
+}
+
+.slides {
+    display: flex;
+    width: 400%; /* cada imagem precisa ter 100% de largura e como são 4, logo é 400%*/
+    height: 100%;
+}
+
+.slides input {
+    display: none;
+}
+
+.imagens {
+    width: 25%; /* são 4 imagens e precisamos dividir em 100%, então você divide 100% pela quantidade de imagens para chegar neste valor */
+    transition: .6s;
+}
+
+.imagens img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.navigation {
+    position: absolute;
+    bottom: 5px;
+    left: 50%;
+    transform: translate(-50%);
+    display: flex;
+}
+
+.navigation .nav {
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    border: 2px solid #888;
+    margin: 6px;
+    cursor: pointer;
+    transition: .9s;
+}
+
+.navigation .nav:hover {
+    background: #fff;
+    border: 2px solid #fff;
+}
+
+#radio-1:checked ~ .one {
+    margin-left: 0;
+}
+
+#radio-2:checked ~ .one {
+    margin-left: -25%;
+}
+
+#radio-3:checked ~ .one {
+    margin-left: -50%;
+}
+
+#radio-4:checked ~ .one {
+    margin-left: -75%;
+}
+
+
+

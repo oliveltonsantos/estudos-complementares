@@ -1,0 +1,31 @@
+@charset "UTF-8";
+
+/* Colocar uma div sobre uma imagem. */
+
+.photo-example {
+    display: grid;
+    max-width: 700px;
+    margin: 20px auto;
+  }
+  
+  .photo-example img {
+    grid-column: 1;
+    grid-row: 1;
+    max-width: 100%;
+    display: block;
+  }
+  
+  .overlay-text {
+    align-self: end;
+    grid-column: 1;
+    grid-row: 1;
+    color: #fff;
+    background-color: rgba(0, 0, 0, 0.308);
+    padding: 20px;
+    font-size: 0.85rem;
+    line-height: 1.7;
+  }
+  
+  .overlay-text p {
+    margin: 0;
+  }

@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Slides</title>
+    <link rel="stylesheet" href="estilos/style.css">
+</head>
+<body>
+    <section class="container">
+        <div class="slides">
+            <!-- "checked" define a imagem que será selecionada como primeira no slide -->
+            <input type="radio" name="radio" id="radio-1" checked> 
+            <input type="radio" name="radio" id="radio-2">
+            <input type="radio" name="radio" id="radio-3">
+            <input type="radio" name="radio" id="radio-4">
+
+            <div class="imagens one">
+                <img src="img/imagem1.jpg" alt="imagens">
+            </div>
+            <div class="imagens">
+                <img src="img/imagem2.jpg" alt="imagens">
+            </div>
+            <div class="imagens">
+                <img src="img/imagem3.jpg" alt="imagens">
+            </div>
+            <div class="imagens">
+                <img src="img/imagem4.jpg" alt="imagens">
+            </div>
+        </div>
+
+        <div class="navigation">
+            <label for="radio-1" class="nav"></label>
+            <label for="radio-2" class="nav"></label>
+            <label for="radio-3" class="nav"></label>
+            <label for="radio-4" class="nav"></label>
+        </div>
+    </section>
+
+    <script src="script.js"></script>
+</body>
+</html>
+

@@ -1,0 +1,56 @@
+/* 
+
+Aula: https://youtu.be/HN1UjzRSdBk
+
+Tempo:
+
+0:00 - Introdução
+1:54 - Conceito de CSS grid
+2:55 - CSS Grid ou flexbox?
+5:15 - Propriedades: Container
+6:36 - Propriedades: Items
+7:06 - Código na prática
+9:29 - Iniciando o CSS grid
+10:06 - grid-template columns e rows
+12:06 - gap
+13:14 - grid column e row
+17:40 - grid-template-areas
+20:54 - Alinhamentos
+25:16 - Justify e Align Content
+31:10 - justify-items e align-items
+33:29 - justify-self e align-self
+
+*/
+
+@charset "UTF-8";
+
+html, body {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100%;
+}
+
+.container {
+    background: black;
+    width: 100vw;
+    height: 100vh;
+
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+
+    grid-gap: 5px;  
+}
+
+.container > div {
+    background: #7159c1;
+    width: 50%;
+    height: 50%;
+}
+
+.center {
+    justify-self: center;
+    align-self: center;
+}

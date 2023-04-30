@@ -1,0 +1,45 @@
+@charset "UTF-8";
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-size: 30px;
+}
+
+[class ^= "box-"] {
+    display: grid;
+    place-items: center;
+    border: solid 5px orangered;
+    padding: 10px;
+    border-radius: 20px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, .1);
+    color: #fff;
+}
+
+body {
+    background: black;
+    height: 100vh;
+}
+
+.beginner-plus {
+    height: 90vh;
+    width: 90%;
+    margin: 20px auto;
+
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    gap: 20px;
+}
+
+.beginner-plus .box-1 {
+    grid-column: span 2;
+}
+
+.beginner-plus .box-2 {
+    grid-column: span 6;
+}
+
+.beginner-plus .box-3 {
+    grid-column: span 4;
+}

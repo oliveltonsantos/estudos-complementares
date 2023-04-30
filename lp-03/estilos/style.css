@@ -1,0 +1,131 @@
+@charset "UTF-8";
+
+/* Aula: https://youtu.be/NSYzwlsxIQI */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+    text-decoration: none;
+    list-style: none;
+}
+
+body {
+    background-color: #28c16f;
+    overflow: hidden;
+}
+
+header {
+    position: fixed;
+    width: 100%;
+    padding: 40px 60px;
+}
+
+.logo {
+    font-size: 2.5rem;
+    font-weight: bold;
+    color: #fff;
+}
+
+nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+nav ul {
+    display: flex;
+    align-items: center;
+    gap: 60px;
+}
+
+nav ul li a {
+    color: #fff;
+    font-size: 1.2rem;
+    border-bottom: 3px solid transparent;
+    transition: all 0.5s;
+}
+
+nav ul li a:hover {
+    border-bottom: 3px solid #1c683f;
+}
+
+.main {
+    overflow: hidden;
+}
+
+.section {
+   height: 100vh;
+   padding: 8rem;
+   display: flex;
+   align-items: center;
+   justify-content: space-between; 
+}
+
+.left {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.left p {
+    font-size: 2.2rem;
+    color: #fff;
+    margin-bottom: 10px;
+}
+
+.left h4 {
+    font-size: 3.5rem;
+    color: #1c683f;
+    margin-bottom: 3rem;
+}
+
+.left .btn {
+    padding: 1.5rem 5rem;
+    background-color: #1c683f;
+    border-radius: 15px;
+    color: #fff;
+    font-size: 1.2rem;
+    font-weight: 700;
+    transition: all 0.3s;
+}
+
+.left .btn:hover {
+    box-shadow: 0 1px 4px #1c683f;
+}
+
+.right img {
+    width: 500px;
+    margin-bottom: 1rem;
+    animation: float 1.8s infinite alternate;
+}
+
+.right .shadow {
+    width: 450px;
+    height: 45px;
+    background: hsla(38, 21%, 19%, .16);
+    border-radius: 50%;
+    margin: 0 auto;
+    filter: blur(5px);
+    animation: shadow 1.8s infinite alternate;
+}
+
+@keyframes float {
+    0%{
+        transform: translateY(0);
+    }
+    100%{
+        transform: translateY(15px);
+    }
+}
+
+@keyframes shadow {
+    0%{
+        transform: scale(1.1);
+    }
+    100%{
+        transform: scale(.85,.85);
+    }
+}
+

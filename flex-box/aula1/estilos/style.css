@@ -1,0 +1,41 @@
+@charset "UTF-8";
+
+.container {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    align-content: center;
+    row-gap: 10px;
+    column-gap: 30px;
+    height: 500px;
+    background-color: rgb(190, 190, 190);
+}
+
+.bloco-1 {
+    width: 100px;
+    height: 100px;
+    margin: 5px;
+    border: 1px solid black;
+    border-radius: 5px;
+    background-color: rgb(140, 140, 196);
+}
+
+.bloco-2 {
+    width: 100px;
+    height: 100px;
+    margin: 5px;
+    border: 1px solid black;
+    border-radius: 5px;
+    background-color: violet;
+}
+
+.bloco-3 {
+    width: 100px;
+    height: 100px;
+    margin: 5px;
+    border: 1px solid black;
+    border-radius: 5px;
+    background-color: orange;
+}

@@ -1,0 +1,136 @@
+@charset "UTF-8";
+
+/* Aula: https://youtu.be/YqY5D0rnkps */
+
+* {
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    /* background: lightgray; */
+    font-family: Arial, Helvetica, sans-serif;
+    text-decoration: none;
+
+    display: flex;
+    flex-direction: column;
+
+    width: 100vw;
+    height: 100vh;
+}
+
+header {
+    background-color: #f8d117;
+
+    padding: 40px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+header > h1 {
+    margin-left: 50px;
+    color: #0a39ab;
+}
+
+main {
+    background-color: white;
+
+    flex-grow: 1;
+
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+footer {
+    display: flex;
+    justify-content: center;
+}
+
+footer .box-footer {
+    background: #1194f6;
+    width: 350px;
+    height: 50px;
+    padding: 10px;
+
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.box-footer span {
+    background-color: white;
+    width: 20px;
+    height: 20px;
+    padding: 10px;
+    border-radius: 50%;
+
+    color: #1194f6;
+    font-weight: 700;
+}
+
+main form {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.card {
+    background: #f8d117;
+    width: 350px;
+    height: 350px;
+    border-radius: 10px;
+    padding: 15px;
+    box-shadow: 0px 2px 5px 1px rgba(153, 153, 153, 0.53);
+}
+
+.card label {
+    display: block;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+.card input[type=text] {
+    background-color: #f9e867;
+    border-bottom: 3px solid #cab734;
+    border-top: 0;
+    border-left: 0;
+    border-right: 0;
+    outline: none;
+    font-size: 16px;
+
+    padding: 15px;
+    height: 50px;
+    width: 300px;
+    cursor: pointer;
+}
+
+.card input[type=text]:focus {
+    border-bottom: 3px solid #1194f6;
+}
+
+.card input[type=submit] {
+    height: 50px;    
+    width: 300px;
+    background-color: #1194f6;
+    color: #fff;
+    text-decoration: none;    
+    border-radius: 2px;
+    border: none;
+    cursor: pointer;
+    font-size: 14px;
+    font-weight: 700;
+}
+
+.card h2 {
+    font-size: 23px;
+    color: #0a39ab;
+}

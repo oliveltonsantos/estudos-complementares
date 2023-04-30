@@ -1,0 +1,40 @@
+@charset "UTF-8";
+
+/* Criar linhas e colunas em um container com várias divs*/
+
+html,
+body {
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  font-family: sans-serif;
+  font-size: 1rem;
+}
+
+.parent {
+  padding: 20px;
+  display: grid;
+  grid-template-columns: 500px 1fr 1fr; /*pode usar px, fr, %*/
+  column-gap: 20px;
+  row-gap: 20px;
+}
+
+.item {
+  background-color: rgb(228, 228, 228);
+  padding: 20px;
+  font-size: 0.77rem;
+  line-height: 1.7;
+}
+
+.item:nth-child(1) {
+  font-size: 1.1rem;
+  grid-row: span 2;
+  display: grid;
+  align-content: center;
+}
+
+.item p {
+  margin: 0;
+}
