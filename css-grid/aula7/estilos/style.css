@@ -1,0 +1,57 @@
+@charset "UTF-8";
+
+/* Aula: https://youtu.be/xPuYbmmPdEM */
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+body {
+    margin: 30px;
+    font-family: "Poppins";
+}
+
+.grid-container {
+    background: #eee;
+    max-width: 900px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    grid-template-rows: 100px 200px 300px;
+    gap: 10px;
+    justify-content: stretch;
+    align-items: stretch;
+}
+
+.grid-container > div {
+    background: #ccc;
+    text-align: center;
+    padding: 20px;
+    border: 1px solid #777;
+}
+
+.grid-container > div:nth-child(1) {
+    grid-column: 1 / span 2;
+}
+
+.grid-container > div:nth-child(2) {
+    grid-column: 3 / span 3;
+}
+
+.grid-container > div:nth-child(3) {
+    grid-column: span 1;
+}
+
+.grid-container > div:nth-child(4) {
+    grid-column: 2 / 6;
+    align-self: flex-end;
+}
+
+.grid-container > div:nth-child(5) {
+    grid-column: span 3;
+}
+
+.grid-container > div:nth-child(6) {
+    grid-column: span 3;
+    justify-self: flex-end;
+    align-self: flex-start;
+}
+
