@@ -1,0 +1,43 @@
+@charset "UTF-8";
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+body {
+    margin: 0;
+    font-family: "Poppins";
+    background: #f7f7f7;
+}
+
+header {
+    background: #fff;
+    padding: 10px;
+}
+
+nav {
+    max-width: 1400px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    text-align: center;
+    align-items: center;
+}
+
+nav a {
+    text-decoration: none;
+    color: #333;
+}
+
+nav h1 {
+    text-transform: uppercase;
+    line-height: 1em;
+}
+
+nav h1 div:first-child {
+    font-weight: 800;
+    letter-spacing: 1.5px;
+}
+
+nav h1 div:last-child {
+    font-weight: 400;
+}
+
