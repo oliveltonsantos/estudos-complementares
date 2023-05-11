@@ -41,3 +41,10 @@ nav h1 div:last-child {
     font-weight: 400;
 }
 
+main {
+    max-width: 1200px;
+    margin: 60px auto;
+    padding: 20px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+}
