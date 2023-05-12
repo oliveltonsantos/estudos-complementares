@@ -10,7 +10,7 @@ body {
 main {
     display: grid;
     grid-template-columns: 1.2fr 1fr 1fr;
-    height: 100vh;
+    min-height: 100%;
 }
 
 .panel {
