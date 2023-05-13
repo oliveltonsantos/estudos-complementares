@@ -4,8 +4,13 @@
 
 body {
     margin: 0;
-    font-family: "Poppins";
+    font-family: 'Poppins', sans-serif;
 }
+
+img {
+    object-fit: cover;
+    width: 100%
+  }
 
 main {
     display: grid;
@@ -32,6 +37,10 @@ main {
     grid-auto-rows: 1fr;
 }
 
+.panel.welcome nav {
+    text-align: center;
+}
+
 .panel.welcome nav a {
     color: #a8a8a8;
     text-decoration: none;
@@ -53,6 +62,7 @@ main {
     align-self: end;
 }
 
+
 /* About panel */
 
 .panel.about {
@@ -62,8 +72,9 @@ main {
 
 .panel.about img {
     min-width: 100%;
-    min-height: 100%;  
+    min-height: 100%;
 }
+
 
 /* Photos panel */
 
@@ -76,6 +87,7 @@ main {
     min-width: 100%;
     min-height: 100%;
 }
+
 
 /* Responsive */
 
@@ -106,18 +118,25 @@ main {
     .panel img {
         width: 100%;
     }
+
 }
 
 @media screen and (max-width: 680px) {
     main {
-        grid-template-columns: 700px 600px 600px;
+        grid-template-rows: 700px 600px 600px;
     }
 
-    .panel.about, .panel.photos{
+    .panel.welcome nav a {
+        jus
+    }
+
+    .panel.about, .panel.photos {
         grid-template-columns: 1fr;
         grid-column: span 1;
         grid-template-rows: 1fr 1fr;
         border-bottom: 1px solid #dcdcd0;
     }
 }
+
+
 
