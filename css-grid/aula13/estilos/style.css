@@ -1,0 +1,141 @@
+@charset "UTF-8";
+
+/* Aula: https://youtu.be/eaU8Ml2a0So */
+
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+* {
+    box-sizing: border-box;
+}
+
+:root {
+    --clr-background: #eceff1;
+    --clr-white: #ffffff;
+    --clr-primary: #aa00ff;
+    --clr-gray: #263238;
+  
+    --font-size: 16px;
+    --border-radius: 0.2em;
+  }
+
+body {
+    margin: 0;
+    font-family: 'Inter', sans-serif;
+    font-size: var(--font-size);
+    color: var(--clr-gray);
+    background-color: var(--clr-background);
+}
+
+.navbar {
+    width: 100vw;
+    background-color: var(--clr-primary);
+    margin: 0;
+}
+
+ul {
+    list-style: none;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    margin: 0;
+    height: 3em;
+    padding: 0;
+}
+
+ul li {
+    padding-right: 2em;
+    font-weight: bold;
+    color: var(--clr-white);
+}
+
+svg {
+    fill: var(--clr-white);
+    height: 1.5em;
+    width: 1.5em;
+}
+
+li:first-child {
+    margin-right: auto;
+    margin-left: 2em;
+}
+
+#wrapper-main {
+    margin: 2em;
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: -1em;
+}
+
+#search {
+    background-color: var(--clr-white);
+    border-radius: var(--border-radius);
+    width: 15em;
+    height: 2.5em;
+    padding: auto;
+    display: flex;
+    align-items: center;
+    color: var(--clr-gray);
+}
+
+.material-icons {
+    padding: 0.2em;
+    font-size: 1.5em;
+}
+
+#wrapper-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1.5em;
+}
+
+.container {
+    background-color: var(--clr-white);
+    border-radius: var(--border-radius);
+    padding: 1em;
+    border-top: 4px solid var(--clr-primary);
+}
+
+.container h2 {
+    margin-bottom: 0.2em;
+    margin-top: 0.5em;
+}
+
+.container p.date {
+    font-size: 0.8em;
+    text-transform: uppercase;
+    letter-spacing: 0.2em;
+    margin-bottom: -1em;
+    margin-top: 0;
+}
+
+/* Responsive */
+
+@media screen and (max-width: 550px) {
+
+    body {
+        --font-size: 12px;
+    }
+
+    #wrapper-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .header {
+        display: flex;
+        flex-direction: column;
+        align-items: stretch;
+        margin-bottom: 1.5em;
+    }
+
+    .header h1 {
+        margin: 0.5em 0;
+    }
+
+    #search {
+        width: 100%;
+    }
+}
