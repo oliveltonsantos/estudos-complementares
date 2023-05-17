@@ -1,0 +1,108 @@
+@charset "UTF-8";
+
+/* Aula: https://youtu.be/fBqx6iEr4T0 */
+
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&display=swap');
+
+:root {
+/*   color variables */
+--clr-primary: #0e48fe;
+--clr-primary-hover: #29e6a7;
+--clr-primary-dark: #039d69;
+--clr-gray100: #f9fbff;
+--clr-gray150: #f4f6fb;
+--clr-gray200: #eef1f6;
+--clr-gray300: #e1e5ee;
+--clr-gray400: #767b91;
+--clr-gray500: #4f546c;
+--clr-gray600: #2a324b;
+--clr-gray700: #161d34;
+--clr-gray800: #0c101d;
+
+/*   border radius */
+--radius: 0.2rem;
+
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+    font-family: 'Open Sans', sans-serif;
+    height: 100vh;
+    background-color: var(--clr-gray100);
+    margin: 2rem;
+}
+
+.gallery {
+    display: grid;
+    justify-content: center;
+    grid-template-columns: repeat(auto-fit, minmax(12rem, 0.3fr));
+    grid-auto-rows: 12rem;
+    gap: 0.5rem;
+}
+
+.card {
+    overflow: hidden;
+    border-radius: var(--radius);
+    cursor: pointer;
+    position: relative;
+}
+
+.card__img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 250ms ease-out;
+}
+
+.card__details {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(255, 255, 255, 0.5);
+    backdrop-filter: blur(2px) brightness(1.3);
+    padding: 0.5rem;
+    opacity: 0;
+    transition: opacity 350ms;
+}
+
+.card__details h2 {
+    text-align: center;
+    line-height: 1.5rem;
+    color: var(--clr-gray100);
+    text-shadow: 0 0 20px var(--clr-gray700), 0 0 5px var(--clr-gray500);
+    position: relative;
+    top: 1rem;
+    transition: top 350ms;
+}
+
+/* Card hover effects */
+
+.card:hover .card__img {
+    transform: scale(1.1);
+}
+
+.card__details:hover {
+    opacity: 1;
+}
+
+.card__details:hover h2 {
+    top: 0;
+}
+
+
+
+
+
+
