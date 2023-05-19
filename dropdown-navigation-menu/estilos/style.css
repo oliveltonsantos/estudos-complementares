@@ -1,0 +1,125 @@
+/* Aula: https://youtu.be/nhlF3wRPkug */
+
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+:root {
+
+    /*   color variables */
+    --clr-primary: #f06292;
+    --clr-primary-hover: #fce4ec;
+    --clr-primary-dark: #ec407a;
+    --clr-gray100: #f9fbff;
+    --clr-gray150: #f4f6fb;
+    --clr-gray200: #eef1f6;
+    --clr-gray300: #e1e5ee;
+    --clr-gray400: #767b91;
+    --clr-gray500: #4f546c;
+    --clr-gray600: #2a324b;
+    --clr-gray700: #161d34;
+
+    /*   border radius */
+    --radius: 0.2rem;
+
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Montserrat, sans-serif;
+}
+
+.nav {
+    position: fixed;
+    width: 100vw;
+    box-shadow: 0 0 10px var(--clr-gray300);
+}
+
+.nav__list {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    gap: 2rem;
+    margin: 0 2rem;
+}
+
+.nav__listlogo {
+   list-style: none;
+   margin-right: auto; 
+   cursor: pointer;
+}
+
+svg {
+    width: 2.5rem;
+    transition: fill 250ms ease-in;
+}
+
+.svg-logo:hover, .svg-logo:focus {
+    fill: var(--clr-primary);
+}
+
+.nav__listitem {
+    list-style: none;
+    font-weight: bold;
+    position: relative;
+    padding: 1.5rem 1rem;
+    cursor: pointer;
+}
+
+/* Traço abaixo das opções do menu */
+
+.nav__listitem::after {
+    content: "";
+    width: 0;
+    height: 0.3rem;
+    border-radius: var(--radius);
+    position: absolute;
+    left: 1rem;
+    bottom: 0.8rem;
+    background-color: var(--clr-primary);
+    transition: width 200ms ease-in;
+}
+
+.nav__listitem:hover::after, .nav__listitem:focus::after {
+    width: 80%;
+}
+
+/* ////////////////////////////////// */
+
+.nav__listitem:hover ul,  .nav__listitem:focus ul {
+    opacity: 1;
+    visibility: visible;
+}
+
+.nav__listitemdrop {
+    position: absolute;
+    top: 4rem;
+    left: -1rem;
+    box-shadow: 0 0 10px var(--clr-gray300);
+    background-color: white;
+    border-radius: var(--radius);
+    width: 12rem;
+    padding: 1rem;
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity 200ms ease-in-out;
+}
+
+.nav__listitemdrop > li {
+    list-style: none;
+    padding: 0.5rem 1rem;
+    border-radius: var(--radius);
+    transition: background-color 200ms ease-in-out;
+}
+
+.nav__listitemdrop > li:hover, li:focus {
+    background-color: var(--clr-primary-hover);
+}
