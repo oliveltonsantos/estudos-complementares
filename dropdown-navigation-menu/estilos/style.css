@@ -49,9 +49,9 @@ body {
 }
 
 .nav__listlogo {
-   list-style: none;
-   margin-right: auto; 
-   cursor: pointer;
+    list-style: none;
+    margin-right: auto;
+    cursor: pointer;
 }
 
 svg {
@@ -59,7 +59,8 @@ svg {
     transition: fill 250ms ease-in;
 }
 
-.svg-logo:hover, .svg-logo:focus {
+.svg-logo:hover,
+.svg-logo:focus {
     fill: var(--clr-primary);
 }
 
@@ -85,13 +86,15 @@ svg {
     transition: width 200ms ease-in;
 }
 
-.nav__listitem:hover::after, .nav__listitem:focus::after {
+.nav__listitem:hover::after,
+.nav__listitem:focus::after {
     width: 80%;
 }
 
 /* ////////////////////////////////// */
 
-.nav__listitem:hover ul,  .nav__listitem:focus ul {
+.nav__listitem:hover ul,
+.nav__listitem:focus ul {
     opacity: 1;
     visibility: visible;
 }
@@ -113,13 +116,14 @@ svg {
     transition: opacity 200ms ease-in-out;
 }
 
-.nav__listitemdrop > li {
+.nav__listitemdrop>li {
     list-style: none;
     padding: 0.5rem 1rem;
     border-radius: var(--radius);
     transition: background-color 200ms ease-in-out;
 }
 
-.nav__listitemdrop > li:hover, li:focus {
+.nav__listitemdrop>li:hover,
+li:focus {
     background-color: var(--clr-primary-hover);
 }
