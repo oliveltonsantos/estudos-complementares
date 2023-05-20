@@ -1,0 +1,93 @@
+/* Aula: https://youtu.be/CBIRZiCPoYM */
+
+:root {
+    --clr-primary: #12e7c0;
+    --clr-graylight: #f3f3f3;
+    --clr-graymed: #c4c4c4;
+    --border-radius: 0.5rem;
+}
+
+*,
+*:before,
+*:after {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: "Playfair Display", serif;
+    background: var(--clr-graylight);
+}
+
+main {
+    margin: 2rem;
+}
+
+h1 {
+    text-align: center;
+}
+
+.wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-top: 1rem;
+}
+
+.testimonial-container {
+    box-shadow: 0px 0px 20px var(--clr-graymed);
+    border-radius: var(--border-radius);
+    padding: 2rem;
+    width: 300px;
+    position: relative;
+    margin: 0.5rem;
+    background: white;
+}
+
+.quote {
+    margin-bottom: 4rem;
+    line-height: 2rem;
+}
+
+.quote::before,
+.quote::after {
+    color: var(--clr-primary);
+    font-size: 80px;
+    display: block;
+    position: relative;
+}
+
+.quote::before {
+    content: open-quote;
+    top: 0.5rem;
+}
+
+.quote::after {
+    content: close-quote;
+    top: 1rem;
+    left: 13rem;
+}
+
+.signature {
+    text-align: right;
+    position: absolute;
+    bottom: 1rem;
+    right: 1rem;
+}
+
+.name {
+    font-size: 1.5rem;
+    position: relative;
+}
+
+.name::before {
+    content: "";
+    width: 20px;
+    height: 4px;
+    background-color: var(--clr-primary);
+    display: inline-block;
+    position: relative;
+    top: -6px;
+    right: 6px;
+}
