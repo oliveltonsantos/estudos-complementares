@@ -1,0 +1,69 @@
+/* Aula:  https://youtu.be/G4Z0E9uEb0o */
+
+:root {
+    --clr-primary: #12e7c0;
+    --clr-graylight: #f3f3f3;
+    --clr-graymed: #c4c4c4;
+    --border-radius: 0.5rem;
+}
+
+*,
+*:before,
+*:after {
+    box-sizing: border-box;
+    margin: 0;
+    paddng: 0;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background: var(--clr-graylight);
+}
+
+main {
+    margin: 2rem;
+}
+
+h1 {
+    text-align: center;
+}
+
+.wrapper {
+    counter-reset: number;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: 4rem 0;
+}
+
+.container {
+    box-shadow: 0px 0px 20px var(--clr-graymed);
+    border-radius: var(--border-radius);
+    padding: 2rem;
+    width: 300px;
+    margin: 0 0.5rem 4rem;
+    background: white;
+    text-align: center;
+    position: relative;
+}
+
+.container::before {
+    counter-increment: number;
+    content: counter(number);
+    width: 4rem;
+    height: 4rem;
+    background: var(--clr-primary);
+    position: absolute;
+    display: block;
+    border-radius: 50%;
+    top: -2rem;
+    left: 7.4rem;
+    font-size: 3rem;
+    font-weight: bold;
+    line-height: 4rem;
+}
+
+.title {
+    margin: 2rem 0 1rem 0;
+}
+
