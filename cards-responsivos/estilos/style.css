@@ -17,7 +17,7 @@ body {
     align-items: center;
 
     color: #434343;
-    background-color: darkslategrey;
+    background-color: black;
 }
 
 main.cards {
@@ -34,7 +34,7 @@ main.cards section.card {
     background: white;
     padding: 1rem 1.5rem;
     border-radius: 8px;
-    max-height: 256px;
+    max-height: 468px;
 }
 
 main.cards section.card .icon {
