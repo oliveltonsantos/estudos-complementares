@@ -1,0 +1,36 @@
+/* Aula: https://youtu.be/mQZ12wNXYXU */
+
+body {
+    background: #333333;
+    margin: 0;
+}
+
+.apps {
+    width: 100vw;
+    height: 100vh;
+}
+
+.apps .swiper-slide {
+    display: grid;
+    grid-template-rows: repeat(3, minmax(0, 1fr));
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+    gap: 2.5vw;
+    padding: 2.5vw;
+    box-sizing: border-box;
+}
+
+.app-icon {
+    display: block;
+    width: 100%;
+    max-height: 80%;
+    object-fit: contain;
+}
+
+.app-name {
+    text-align: center;
+    font-size: 14px;
+    font-family: sans-serif;
+    padding: 3.5%;
+    color: #ffffff;
+    text-shadow: 5px 5px 5px rgba(0, 0, 0, 0.25);
+}
