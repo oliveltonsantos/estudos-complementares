@@ -12,17 +12,24 @@
 
 body {
     background: rgb(27, 27, 27);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+    height: 100vh;
 }
 
 .container {
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
+    height: 500px;
 }
 
 .card {
     background: white;
     width: 270px;
+    height: 400px;
     margin: 10px;
     border-radius: 10px;
 }
