@@ -1,0 +1,79 @@
+/* Aula: https://youtu.be/qXRYMdvq_Dc */
+
+@charset "UTF-8";
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    list-style: none;
+    text-decoration: none;
+}
+
+body {
+    background: rgb(27, 27, 27);
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.card {
+    background: white;
+    width: 270px;
+    margin: 10px;
+    border-radius: 10px;
+}
+
+.card-image {
+    background-color: aqua;
+    height: 170px;
+    margin-bottom: 15px;
+    background-size: cover;
+    border-radius: 10px 10px 0 0;  
+}
+
+.car-1 {
+    background-image: url('https://images.unsplash.com/photo-1583121274602-3e2820c69888?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80');
+}
+
+.car-2 {
+    background-image: url('https://images.unsplash.com/photo-1553440569-bcc63803a83d?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1425&q=80');
+}
+
+.car-3 {
+    background-image: url('https://images.unsplash.com/photo-1532581140115-3e355d1ed1de?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80');
+}
+
+.card h2 {
+    padding: 10px;
+}
+
+.card p {
+    padding: 10px;
+}
+
+.card a {
+    background-color: black;
+    color: white;
+    padding: 15px 20px;
+    display: block;
+    text-align: center;
+    margin: 20px 50px;
+}
+
+.card:hover {
+    cursor: pointer;
+    transform: scale(1.03);
+    transition: all 200ms ease;
+}
+
+.card:hover a {
+    background: red;
+}
+
+
+
+
