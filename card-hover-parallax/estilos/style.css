@@ -1,3 +1,5 @@
+/* Aula: https://youtu.be/JGDeOEb-uis */
+
 @charset "UTF-8";
 
 * {
@@ -119,4 +121,5 @@ body {
 .card .description input:hover {
     background: #83277b;
 }
+
 
