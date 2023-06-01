@@ -1,0 +1,90 @@
+@import url(../CSS/fonts.css);
+
+
+html, body {
+    margin: 0%;
+    box-sizing: border-box;
+    overflow: hidden;
+}
+
+:root {
+
+    /* Theme colors */
+    --text-gray: #3f4954;
+    --text-light : #686666da;
+    --bg-color: #0f0f0f;
+    --white: #ffffff;
+    --midnight: #104f55;
+
+    /* Theme font-family */
+    --Inter: 'Inter';
+}
+
+/* ------------- Global classes ------------- */  
+
+a {
+    text-decoration: none;
+    color: var(--text-gray);
+}
+
+.flex-row {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+ul {
+    list-style: none;
+}
+
+/* ------X------- Global classes ------X------- */
+
+
+/* ------------- navbar ------------- */  
+
+.nav {
+    background: white;
+    padding: 0 2rem;
+    height: 0rem;
+    min-height: 40vh;
+    overflow: hidden;
+}
+
+.nav .nav-menu {
+   justify-content: space-between; 
+}
+
+.nav .nav-items {
+    display: flex;
+    margin: 0;
+}
+
+.nav .nav-items .nav-link {
+    padding: 1.6rem 1rem;
+    font-size: 1.1rem;
+    position: relative;
+}
+
+.nav .nav-brand a {
+    font-size: 1.6rem;
+    padding: 1rem 0;
+    display: block;
+    font-family: var(--Inter);
+}
+
+.nav .social {
+    padding: 1.4rem 0;
+}
+
+/* ------X------- navbar ------X------- */
+
+
+
+
+
+
+
+
+
+
+
