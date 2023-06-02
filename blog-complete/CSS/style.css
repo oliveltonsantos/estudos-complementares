@@ -39,6 +39,30 @@ ul {
     list-style: none;
 }
 
+h1 {
+    font-family: var(--Inter);
+    font-size: 2.5rem;
+}
+
+h2 {
+    font-family: var(--Inter);
+}
+
+h3 {
+    font-family: var(--Inter);
+    font-size: 1.3rem;
+}
+
+button.btn {
+    border: none;
+    border-radius: 2rem;
+    padding: 1rem 3rem;
+    font-size: 1rem;
+    font-family: var(--Inter);
+    cursor: pointer;
+}
+
+
 /* ------X------- Global classes ------X------- */
 
 
@@ -48,12 +72,36 @@ ul {
     background: white;
     padding: 0 2rem;
     height: 0rem;
-    min-height: 40vh;
+    min-height: 5vh;
     overflow: hidden;
+    transition: height 1s ease-in-out;
 }
 
 .nav .nav-menu {
    justify-content: space-between; 
+}
+
+.nav .toggle-collapse {
+  position: absolute;
+  top: 0;
+  width: 90%;
+  cursor: pointer; 
+  display: none; 
+}
+
+.nav .toggle-collapse .toggle-icons {
+    display: flex;
+    justify-content: end;
+    padding: 1.7rem 0;
+}
+
+.nav .toggle-collapse .toggle-icons i {
+    font-size: 1.4rem;
+    color: var(--text-gray);
+}
+
+.collapse {
+    height: 30rem;
 }
 
 .nav .nav-items {
@@ -98,13 +146,67 @@ ul {
     color: #a1c4cf;
 }
 
-
-
-
-
-
-
 /* ------X------- navbar ------X------- */
+
+
+/* ------------- Main content ------------- */  
+
+/* ------------- Site title ------------- */ 
+
+main .site-title {
+    background: url(../assets/Background-image.png);
+    background-size: cover;
+    height: 110vh;
+    display: flex;
+    justify-content: center;
+}
+
+main .site-title .site-background {
+   padding-top: 10rem;
+   text-align: center;
+   color: var(--white); 
+}
+
+main .site-title h1, h3 {
+    margin: .3rem;
+}
+
+main .site-title .btn {
+    margin: 1.8rem;
+    background: var(--sky);
+}
+
+main .site-title .btn:hover {
+    background: transparent;
+    border: 1px solid var(--white);
+    color: var(--white);
+}
+
+/* ------X------- Site title ------X------- */
+
+
+/* ------X------- Main content ------X------- *Main content
+
+
+
+
+
+
+
+
+/* ------------- Viewport less than or equal 750px ------------- */  
+
+@media screen and (max-width:750px) {
+    .nav .nav-menu, .nav .nav-items {
+        flex-direction: column;
+    }
+
+    .nav .toggle-collapse {
+        display: initial;
+    }
+}
+
+/* ------X------- Viewport less than or equal 750px ------X------- *Viewport less than or equal 750px
 
 
 
