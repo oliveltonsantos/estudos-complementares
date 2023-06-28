@@ -1,0 +1,52 @@
+body {
+    background: linear-gradient(90deg, #8a2387, #e94057, #f27121);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    font-family: sans-serif;
+
+    /* Para tirar a barra de rolagem */
+    overflow: hidden;
+}
+
+.container {
+    background-color: rgba(255, 255, 255, 0.3);
+    border-radius: 16px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(5px);
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    width: 20rem;
+    height: 10rem;
+    padding: 32px;
+}
+
+.container h1 {
+    text-align: center;
+}
+
+.container form {
+    display: flex;
+    justify-content: center;
+}
+
+input[type='text'] {
+    padding: 10px;
+    border: none;
+    border-radius: 8px;
+    outline: none;
+    margin-right: 15px;
+}
+
+input[type='color'] {
+    background-color: black;
+    border: none;
+    border-radius: 5px;
+    height: 40px;
+    width: 40px;
+    transition: .3s;
+}
+
+input[type='color']:hover {
+    background-color: white;
+}
