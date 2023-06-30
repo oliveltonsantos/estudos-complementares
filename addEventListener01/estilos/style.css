@@ -1,0 +1,27 @@
+div {
+    margin: 10px;
+}
+
+.c1 {
+    background-color: lightgray;
+    border: 3px solid black;
+    width: 100px;
+    height: 30px;
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+}
+
+.c2 {
+    background-color: darkslategrey;
+    border: 3px solid black;
+    width: 100px;
+    height: 30px;
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    color: white;
+}
+
