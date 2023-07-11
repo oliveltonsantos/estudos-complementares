@@ -1,3 +1,108 @@
+/* MENU*/
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+.container {
+    max-width: 1080px;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+header {
+    background-color: #000000;
+    width: 100%;
+    padding: 10px;
+}
+
+.logo, .sociais {
+    width: 25%;
+}
+
+.logo img {
+    width: 200px;
+    cursor: pointer;
+}
+
+.menu {
+    width: 50%;
+}
+
+.menu nav a {
+    color: #ffffff;
+    text-decoration: none;
+    padding-right: 50px;
+    font-size: 18px;
+    position: relative;
+}
+
+/* LINHA EMBAIXO DOS ITENS DO MENU*/
+
+.menu nav a::after {
+    content: '';
+    width: 0px;
+    height: 4px;
+    background-image: linear-gradient(45deg, #ff2500, #ff7100);
+    position: absolute;
+    top: 30px;
+    left: 0;
+    transition: width 0.5s;
+}
+
+.menu nav a:hover::after {
+    width: 30px;
+}
+
+/*---------------------------------------------*/
+
+.sociais button {
+    width: 40px;
+    height: 40px;
+    background-image: linear-gradient(45deg, #ff2500, #ff7100);
+    border-radius: 8px;
+    cursor: pointer;
+    border: none;
+    margin-right: 10px;
+}
+
+.sociais button i {
+    font-size: 20px;
+    color: #ffffff;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*SLIDE CARROUSSEL*/
+
 section.slider {
     margin: 0 auto;
     width: 100%;
