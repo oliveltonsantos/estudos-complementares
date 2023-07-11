@@ -12,7 +12,8 @@ section.slider {
     display: flex;
 }
 
-.slider-content input, .img-mobile {
+.slider-content input,
+.img-mobile {
     display: none;
 }
 
@@ -26,9 +27,10 @@ section.slider {
 
 .slide-box img {
     width: 100%;
-} 
+}
 
-.nav-manual, .nav-auto {
+.nav-manual,
+.nav-auto {
     position: absolute;
     width: 100%;
     margin-top: 35%;
@@ -36,7 +38,8 @@ section.slider {
     justify-content: center;
 }
 
-.nav-manual .manual-btn, .nav-auto div {
+.nav-manual .manual-btn,
+.nav-auto div {
     border: 1px solid #ff0054;
     padding: 10px;
     border-radius: 50%;
@@ -46,7 +49,8 @@ section.slider {
 
 /* O "not" serve para indicar que todos os elementos que tem a class ".manual-btn" terão os parâmetros baixo menos o last-child*/
 
-.nav-manual .manual-btn:not(:last-child), .nav-auto div:not(:last-child){
+.nav-manual .manual-btn:not(:last-child),
+.nav-auto div:not(:last-child) {
     margin-right: 10px;
 }
 
@@ -56,29 +60,29 @@ section.slider {
 
 /* Mudar a cor do background das bolinhas dos slides*/
 
-#radio1:checked ~ .nav-auto .auto-btn1 {
+#radio1:checked~.nav-auto .auto-btn1 {
     background-color: #ff0054;
 }
 
-#radio2:checked ~ .nav-auto .auto-btn2 {
+#radio2:checked~.nav-auto .auto-btn2 {
     background-color: #ff0054;
 }
 
-#radio3:checked ~ .nav-auto .auto-btn3 {
+#radio3:checked~.nav-auto .auto-btn3 {
     background-color: #ff0054;
 }
 
 /* Trocar as imagens dos slides*/
 
-#radio1:checked ~ .primeiro {
+#radio1:checked~.primeiro {
     margin-left: 0%;
 }
 
-#radio2:checked ~ .primeiro {
+#radio2:checked~.primeiro {
     margin-left: -25%;
 }
 
-#radio3:checked ~ .primeiro {
+#radio3:checked~.primeiro {
     margin-left: -50%;
 }
 
@@ -93,12 +97,8 @@ section.slider {
         display: block;
     }
 
-    .nav-auto, .nav-manual {
+    .nav-auto,
+    .nav-manual {
         margin-top: 60%;
     }
 }
-
-
-
-
-
