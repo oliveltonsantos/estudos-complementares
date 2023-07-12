@@ -84,7 +84,7 @@ header {
     background-color: #0000008c;
     backdrop-filter: blur(10px);
     position: absolute;
-    top: 77px;
+    top: 70px;
     left: 0;
     width: 100%;
     height: 0vh;
@@ -143,7 +143,7 @@ button.ativar .linha:nth-child(2) {
 }
 
 button.ativar .linha:nth-child(3) {
-    transform: translateY(-5px) rotate(45deg);
+    transform: translateY(-3px) rotate(45deg);
     background: red;
 }
 
