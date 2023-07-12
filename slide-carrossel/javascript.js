@@ -1,3 +1,26 @@
+// Animação do menu
+
+const menuDiv = document.getElementById('menu-mobile')
+
+const btnAnimar = document.getElementById('botao-menu')
+
+menuDiv.addEventListener('click', animarMenu)
+
+function animarMenu() {
+
+    // Animação do ícone do menu
+
+    const btn = document.getElementById('botao-menu')
+    btn.classList.toggle('ativar')
+
+    // Abrir e fechar o menu
+
+    menuDiv.classList.toggle('abrir')
+    btnAnimar.classList.toggle('ativo')
+}
+
+// Slide carroussel
+
 var radio = document.querySelector('.manual-btn')
 var cont = 1
 
@@ -16,3 +39,10 @@ function proximaImg() {
 
     document.getElementById('radio' + cont).checked = true
 }
+
+
+
+
+
+ 
+
