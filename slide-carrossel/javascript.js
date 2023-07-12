@@ -4,6 +4,8 @@ const menuDiv = document.getElementById('menu-mobile')
 
 const btnAnimar = document.getElementById('botao-menu')
 
+const sliderSlide = document.querySelector('.slider')
+
 menuDiv.addEventListener('click', animarMenu)
 
 function animarMenu() {
@@ -17,6 +19,7 @@ function animarMenu() {
 
     menuDiv.classList.toggle('abrir')
     btnAnimar.classList.toggle('ativo')
+    sliderSlide.classList.toggle('sumir')
 }
 
 // Slide carroussel
@@ -44,5 +47,5 @@ function proximaImg() {
 
 
 
- 
+
 

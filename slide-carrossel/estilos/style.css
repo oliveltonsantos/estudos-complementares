@@ -21,7 +21,8 @@ header {
     padding: 10px;
 }
 
-.logo, .sociais {
+.logo,
+.sociais {
     width: 25%;
 }
 
@@ -239,8 +240,10 @@ section.slider {
 
 /* Media queries*/
 
-@media screen and (max-width: 1030px){
-    .menu, .sociais {
+@media screen and (max-width: 1030px) {
+
+    .menu,
+    .sociais {
         display: none;
     }
 
@@ -251,6 +254,10 @@ section.slider {
     .menu-mobile.abrir {
         visibility: visible;
         height: calc(100vh - 77px);
+    }
+
+    .slider.sumir {
+        display: none;
     }
 
     #botao-menu {
