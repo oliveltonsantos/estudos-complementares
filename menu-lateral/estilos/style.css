@@ -1,0 +1,95 @@
+@charset "UTF-8";
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    list-style: none;
+    text-decoration: none;
+    font-family: sans-serif;
+}
+
+body {
+    height: 900vh;
+}
+
+nav.menu-lateral {
+    width: 70px;
+    height: 100%;
+    background-color: #202020;
+    padding: 40px 0 40px 1%;
+    box-shadow: 3px 0 0 #ff0077;
+
+    /* Deixar a barra lateral fixa independentemente da altura da tela*/
+
+    position: fixed;
+    top: 0;
+    left: 0;
+
+    overflow: hidden;
+    transition: .5s;
+}
+
+/* EXPANDIR O MENU */
+
+nav.menu-lateral.expandir {
+    width: 300px;
+}
+
+/* ------------------------ */
+
+.btn-expandir {
+    width: 100%;
+    padding-left: 10px;
+}
+
+.btn-expandir>i {
+    color: #fff;
+    font-size: 24px;
+    cursor: pointer;
+}
+
+ul {
+    height: 100%;
+}
+
+ul li.item-menu {
+    transition: .2s;
+}
+
+/* FUNÇÃO DO JAVASCRIPT */
+
+ul li.ativo {
+    background-color: #ff0077;
+}
+
+/* ------------------------ */
+
+ul li.item-menu:hover {
+    background: #ff0077;
+}
+
+ul li.item-menu a {
+    color: #fff;
+    font-size: 20px;
+    padding: 20px 4%;
+    display: flex;
+    margin-bottom: 20px;
+    line-height: 40px;
+}
+
+ul li.item-menu a .txt-link {
+    margin-left: 70px;
+    transition: .5s;
+    opacity: 0;
+}
+
+nav.menu-lateral.expandir .txt-link {
+    margin-left: 30px;
+    opacity: 1;
+}
+
+ul li.item-menu a .icon>i {
+    font-size: 30px;
+    margin-left: 5px;
+}
