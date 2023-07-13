@@ -42,7 +42,8 @@ header.rolagem {
     padding: 20px 4%;
 }
 
-header.rolagem a, header.rolagem i {
+header.rolagem a,
+header.rolagem i {
     color: #ffae81;
 }
 
