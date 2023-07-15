@@ -136,6 +136,6 @@ body {
 
 @media screen and (max-width: 600px) {
     .wrapper .carousel {
-        grid-template-columns: 100%;
+        grid-auto-columns: 100%;
     }
 }
