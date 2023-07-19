@@ -41,6 +41,17 @@ body {
     transform: scale(1.05);
 }
 
+/* ESTILO DO SCROLLBAR */
+
+
+::-webkit-scrollbar {
+    width: auto;
+}
+
+::-webkit-scrollbar-thumb {
+    background: #00ff08;
+}
+
 /* ESTILO DO CABEÇALHO */
 
 header {
