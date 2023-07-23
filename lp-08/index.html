@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <!------------- Swiper ------------->
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css" />
+
+    <!------X------- X ------X------->
+
+
+    <!------------- Link do documento CSS ------------->
+
+    <link rel="stylesheet" href="estilos/style.css">
+
+    <!------X------- X ------X------->
+
+
+    <!------------- Ícones do Font Awesome ------------->
+
+    <script src="https://kit.fontawesome.com/93cdad0476.js" crossorigin="anonymous"></script>
+
+    <!------X------- X ------X------->
+
+
+</head>
+
+<body>
+
+    <div class="container">
+        <div class="wave">
+            <img src="images/bg.png" alt="">
+        </div>
+
+        <nav>
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Products</a></li>
+                <li><a href="#">Service</a></li>
+                <li><a href="#">Types</a></li>
+                <li><a href="#">FAQ</a></li>
+            </ul>
+            <img src="images/logo.png" alt="">
+        </nav>
+
+        <div class="main-content">
+            <div class="image-pista">
+                <div class="swiper mySwiper">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide"><img src="images/img1.png" alt=""></div>
+                        <div class="swiper-slide"><img src="images/img2.png" alt=""></div>
+                        <div class="swiper-slide"><img src="images/img3.png" alt=""></div>
+                    </div>
+                    <div class="swiper-button-next"></div>
+                    <div class="swiper-button-prev"></div>
+                    <div class="swiper-pagination"></div>
+                </div>
+            </div>
+            <div class="main-text">
+                <h1>The Pistachios</h1>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi, ea!</p>
+                <button>Know more</button>
+            </div>
+        </div>
+
+        <div class="right">
+            <div class="box">
+                <div class="image">
+                    <img src="images/img4.png" alt="">
+                </div>
+                <div class="inner-box">
+                    <h3>100% Organic</h3>
+                    <p>Lorem ipsum dolor sit amet.</p>
+                </div>
+            </div>
+
+            <div class="box">
+                <div class="image">
+                    <img src="images/img5.png" alt="">
+                </div>
+                <div class="inner-box">
+                    <h3>Not expensive</h3>
+                    <p>Lorem ipsum dolor sit amet.</p>
+                </div>
+            </div>
+
+            <div class="box">
+                <div class="image">
+                    <img src="images/img6.png" alt="">
+                </div>
+                <div class="inner-box">
+                    <h3>Super healthy</h3>
+                    <p>Lorem ipsum dolor sit amet.</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="social-links">
+            <i class="fab fa-instagram"></i>
+            <i class="fab fa-facebook"></i>
+            <i class="fab fa-youtube"></i>
+            <i class="fab fa-twitter"></i>
+        </div>
+
+
+    </div>
+
+
+    <!------------- Link do documento JavaScript ------------->
+
+    <script src="javascript.js"></script>
+
+    <!------X------- X ------X------->
+
+
+    <!------------- Swiper JavaScript ------------->
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+
+    <!-- Initialize Swiper -->
+    <script>
+        var swiper = new Swiper(".mySwiper", {
+            slidesPerView: 1,
+            spaceBetween: 30,
+            loop: true,
+            pagination: {
+                el: ".swiper-pagination",
+                clickable: true,
+            },
+            navigation: {
+                nextEl: ".swiper-button-next",
+                prevEl: ".swiper-button-prev",
+            },
+        });
+    </script>
+
+    <!------X------- X ------X------->
+
+
+
+
+</body>
+
+</html>
