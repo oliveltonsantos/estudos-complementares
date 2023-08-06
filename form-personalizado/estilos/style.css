@@ -1,0 +1,90 @@
+@charset "UTF-8";
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    list-style: none;
+    text-decoration: none;
+    font-family: sans-serif;
+}
+
+body {
+    width: 100%;
+    height: 100vh;
+    background-image: url(../images/work.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container {
+    max-width: 1280px;
+    margin: 0 auto;
+    padding: 0 4%;
+}
+
+form {
+    background-color: #fff;
+    max-width: 500px;
+    height: 450px;
+    padding: 40px;
+    border-radius: 20px;
+}
+
+form h1 {
+    text-align: center;
+    font-size: 30px;
+    color: #2d5966;
+}
+
+form p {
+    text-align: center;
+    margin: 20px 0;
+}
+
+.input-single {
+    position: relative;
+    margin: 30px 0;
+}
+
+.input-single label {
+    position: absolute;
+    left: 0;
+    bottom: 5px;
+    transition: all 0.2s;
+    cursor: text;
+}
+
+.input {
+    width: 100%;
+    border: 0;
+    border-bottom: 2px solid #ccc;
+    padding: 5px;
+    font-size: 17px;
+    outline: 0;
+}
+
+form .input-single .input:focus~label,
+form .input-single .input:valid~label {
+    transform: translateY(-24px);
+    font-size: 12px;
+    color: #2d5966;
+}
+
+.btn {
+    width: 100%;
+    text-align: center;
+}
+
+form input[type=submit] {
+    padding: 10px 40px;
+    border: 0;
+    border-radius: 10px;
+    background-color: #2d5966;
+    color: #fff;
+    cursor: pointer;
+}
