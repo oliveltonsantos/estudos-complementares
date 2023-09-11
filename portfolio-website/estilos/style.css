@@ -133,7 +133,7 @@ header .img-logo {
     width: 70%;
 }
 
-.menu-mobile.abrir-menu ~.overlay-menu {
+.menu-mobile.abrir-menu~.overlay-menu {
     display: block;
 }
 
@@ -443,6 +443,7 @@ footer .line-footer p a {
     }
 
     /* CABEÇALHO */
+
     .menu-desktop,
     .btn-contato {
         display: none;
