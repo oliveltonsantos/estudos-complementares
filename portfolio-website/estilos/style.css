@@ -111,12 +111,6 @@ header .img-logo {
 
 /* ------------- ESTILO MENU MOBILE ------------- */
 
-.btn-abrir-menu {
-    color: #00ff08;
-    font-size: 40px;
-    display: none;
-}
-
 .menu-mobile {
     background: #000;
     height: 100vh;
@@ -124,17 +118,22 @@ header .img-logo {
     top: 0;
     right: 0;
     z-index: 99999;
-    width: 70%;
     width: 0%;
     overflow: hidden;
     transition: .5s;
+}
+
+.btn-abrir-menu {
+    color: #00ff08;
+    font-size: 40px;
+    display: none;
 }
 
 .menu-mobile.abrir-menu {
     width: 70%;
 }
 
-.menu-mobile.abrir-menu~.overlay-menu {
+.menu-mobile.abrir-menu ~.overlay-menu {
     display: block;
 }
 
